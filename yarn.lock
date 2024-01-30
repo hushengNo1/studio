@@ -2247,7 +2247,7 @@ __metadata:
   resolution: "@foxglove/comlink-transfer-handlers@workspace:packages/comlink-transfer-handlers"
   dependencies:
     "@foxglove/tsconfig": 2.0.0
-    comlink: "github:foxglove/comlink#9181fa505671b35b1e66e0a8361a6fc1bdd03307"
+    comlink: 4.4.1
     typescript: 5.3.3
   languageName: unknown
   linkType: soft
@@ -2265,7 +2265,7 @@ __metadata:
   dependencies:
     "@foxglove/tsconfig": 2.0.0
     async-mutex: 0.4.0
-    comlink: "github:foxglove/comlink#9181fa505671b35b1e66e0a8361a6fc1bdd03307"
+    comlink: 4.4.1
     xacro-parser: 0.3.9
   languageName: unknown
   linkType: soft
@@ -2602,7 +2602,7 @@ __metadata:
     chartjs-plugin-annotation: 3.0.1
     chartjs-plugin-datalabels: 2.2.0
     chromatic: 7.2.0
-    comlink: "github:foxglove/comlink#9181fa505671b35b1e66e0a8361a6fc1bdd03307"
+    comlink: 4.4.1
     crypto-browserify: 3.12.0
     css-loader: 6.8.1
     cytoscape: 3.28.1
@@ -8807,10 +8807,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"comlink@github:foxglove/comlink#9181fa505671b35b1e66e0a8361a6fc1bdd03307":
+"comlink@npm:4.4.1":
   version: 4.4.1
-  resolution: "comlink@https://github.com/foxglove/comlink.git#commit=9181fa505671b35b1e66e0a8361a6fc1bdd03307"
-  checksum: 1d89d5dee814e71f1cf5d46b5d4b8223bbc598d5b9a82ed53791b4127d35a3473d9cb1a4984e1d034ac6322de0a4dfb72d131529f870604efe79b42f4462dc98
+  resolution: "comlink@npm:4.4.1"
+  checksum: 16d58a8f590087fc45432e31d6c138308dfd4b75b89aec0b7f7bb97ad33d810381bd2b1e608a1fb2cf05979af9cbfcdcaf1715996d5fcf77aeb013b6da3260af
   languageName: node
   linkType: hard
 

@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"debug.javascript.autoAttachFilter": "onlyWithFlag",
+		"debug.toolBarLocation": "docked",
+		"typescript.tsdk": "node_modules/typescript/lib"
+	}
+}

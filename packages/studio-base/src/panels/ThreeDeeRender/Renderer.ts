@@ -36,7 +36,7 @@ import { HUDItemManager } from "@foxglove/studio-base/panels/ThreeDeeRender/HUDI
 import { LayerErrors } from "@foxglove/studio-base/panels/ThreeDeeRender/LayerErrors";
 import { ICameraHandler } from "@foxglove/studio-base/panels/ThreeDeeRender/renderables/ICameraHandler";
 import IAnalytics from "@foxglove/studio-base/services/IAnalytics";
-import { palette, fontMonospace } from "@foxglove/theme";
+import { fontMonospace, palette } from "@foxglove/theme";
 import { LabelMaterial, LabelPool } from "@foxglove/three-text";
 
 import { HUDItem } from "./HUDItemManager";
@@ -87,8 +87,8 @@ import {
   AddTransformResult,
   CoordinateFrame,
   DEFAULT_MAX_CAPACITY_PER_FRAME,
-  TransformTree,
   Transform,
+  TransformTree,
 } from "./transforms";
 import { InterfaceMode } from "./types";
 
@@ -324,6 +324,10 @@ export class Renderer extends EventEmitter<RendererEvents> implements IRenderer 
 
     this.#scene.add(this.#dirLight);
     this.#scene.add(this.#hemiLight);
+
+    // DEBUG:
+    const axesHelper = new THREE.AxesHelper(500);
+    this.#scene.add(axesHelper);
 
     this.input = new Input(canvas, () => this.cameraHandler.getActiveCamera());
     this.input.on("resize", (size) => {
